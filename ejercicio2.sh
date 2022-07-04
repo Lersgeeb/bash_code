@@ -1,29 +1,29 @@
 #!/bin/bash
 
 awk 'BEGIN {
-
-	
+        OFMT = "%.0f";
 	num_non_valid = 1;
 	while(num_non_valid){
 		print "Primer número: ";
 		getline num1;
 		if(num1 ~ /^[0-9]+$/){
-                	print("El numero es válido") 
+                	print("El número es válido") 
+			
 			break;
 		}
 		else	
-			print("el numero es inválido, intente de nuevo");
+			print("el número es inválido, intente de nuevo");
 	}
 
 	while(num_non_valid){
                 print "Segundo número: ";
                 getline num2;
-                if(num1 ~ /[0-9]+/){
-                        print("El numero es válido")
+                if(num2 ~ /^[0-9]+$/){
+                        print("El número es válido")
                         break;
                 }
                 else
-                        print("el numero es inválido, intente de nuevo");
+                        print("el número es inválido, intente de nuevo");
         }
 
 	sumNum1 = 0;
@@ -46,13 +46,13 @@ awk 'BEGIN {
 	}
 	
 	if(sumNum2==num1)
-		secondReq = 1
+		secondReq = 1;
 
 	if(firstReq==1 && secondReq==1){
-		print("\n ************* Son números amigos **************** \n")
+		printf("\n ************ %s y %s Son números amigos ************ \n\n", num1, num2);
 	}
 	else
-		print("\n ************* NO son números amigos ************** \n")
+		printf("\n ************ %s y %s NO son números amigos ************ \n\n", num1, num2);
 	
 }'
 
