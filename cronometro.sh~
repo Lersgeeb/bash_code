@@ -84,14 +84,14 @@ if [ "$1" == "W" ]; then
     echo ${fecha_actual}
 fi
 
-echo "" > salida.txt
 while [[ "${fecha_anterior}" != "${fecha_actual}" ]]
 do
     fecha_cambio=`date -d "${fecha_anterior} 59min" "+%Y-%m-%d %H:%M:%S"`
-    echo "Rango: "${fecha_anterior}" - "${fecha_cambio} >> salida.txt
+    echo "Rango: "${fecha_anterior}" - "${fecha_cambio} > salida.txt
     fecha_anterior=`date -d "${fecha_anterior} 1 hour" "+%Y-%m-%d %H:%M:%S"`
 done
 
 hora_final=`date "+%Y-%m-%d %H:%M%S"`
+./sendEmail.pl -f banegas.gabriel13@gmail.com -t banegas.gabriel13@gmail.com -u "ejercicio" -s 8.8.8.8 -a salida.txt -o "Hola este es una prueba"
 
 exit 0
