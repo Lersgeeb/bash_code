@@ -1,0 +1,6 @@
+Nombre del estudiante,Gabriel Enrique Escobar Banegas
+¿Qué puede hacer Bash?,Bash puede manejar varios tipos de lenguajes y puede ejecutar cualquier operación como si fuera un lenguaje de programación.
+Diferencia de Bash y un compilador,La principal diferencia radica en las capas intermedias de aplicación entre el lenguaje de programación y el sistema operativo.
+¿Qué carácter debe ser usado para hacer un comentario?,Se debe usar el “#”
+¿Cuáles son los comandos usados para hacer operaciones aritméticas?,“let y expr”
+¿Cómo se puede generar un numero aleatorio en Bash?,“Se puede generar con $RANDOM”

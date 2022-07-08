@@ -1,0 +1,10 @@
+¿Qué puede hacer Bash?
+Diferencia de Bash y un compilador
+¿Qué carácter debe ser usado para hacer un comentario?
+¿Cuál es la extensión para hacer un archivo de Bash ejecutable?
+¿Cuál es la primera línea que debe ser colocado en un programa de Bash?
+Variable de entorno que contiene la información del usuario que ejecuta el proceso
+¿Cuáles son los comandos usados para hacer operaciones aritméticas?
+¿Qué operaciones aritméticas se pueden realizar en Bash?
+¿Se pueden realizar bucles y condiciones en Bash?
+¿Cómo se puede generar un numero aleatorio en Bash?
